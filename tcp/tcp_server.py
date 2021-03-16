@@ -2,9 +2,12 @@
 import socket
 import os
 import sys
+import signal
 
 s=socket.socket(socket.AF_INET,socket.SOCK_STREAM)
+s.setsockopt(socket.SOL_SOCKET,socket.SO_REUSEADDR,1)
 s.bind(('',9999))
+signal.signal(signal.SIGCHLD,signal.SIG_IGN)
 s.listen(5)
 
 while True:
