@@ -9,7 +9,7 @@ s=socket.socket(socket.AF_INET,socket.SOCK_STREAM)
 s.connect((adresa,9999))
 f=s.makefile(mode='rw',encoding='utf-8')
 f.readline()
-f.write('SUMATOR 1.0')
+f.write('SUMATOR 1.0\n')
 f.flush()
 for line in sys.stdin:
     for word in line.split():
