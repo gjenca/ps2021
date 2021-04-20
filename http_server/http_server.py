@@ -59,7 +59,8 @@ while True:
             URL=m.group(1)
             filename=DOCUMENT_ROOT+URL
             try:
-                reply=open(filename,'rb').read()
+                with open(filename,'rb') as fr:
+                    reply=fr.read()
             except FileNotFoundError:
                 send_status(f,404,'Not found')
                 break

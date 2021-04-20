@@ -1,0 +1,9 @@
+ul li {
+  border-width:3px;
+  border-style:dashed;
+  border-color:blue;
+  padding:0.5em;
+  margin:1em;
+  width:5em;
+}
+

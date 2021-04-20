@@ -1,0 +1,4 @@
+GET /moin_static198/kmat/img/kmadg_logo.gif HTTP/1.1
+Host: www.math.sk
+If-none-match: "945-472d848a33300"
+
