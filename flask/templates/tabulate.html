@@ -1,0 +1,19 @@
+{% extends "basic.html" %}
+{% block title %}
+{{function}}
+{% endblock %}
+{% block body %}
+<h1> {{function}} </h1>
+<table border="1">
+<tr> 
+<th>{{headerx}}</th>
+<th>{{headery}}</th>
+</tr>
+{% for x,y in data %}
+<tr>
+<td> {{x}} </td>
+<td> {{y}} </td>
+</tr>
+{% endfor %}
+</table>
+{% endblock %}

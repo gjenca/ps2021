@@ -1,0 +1,13 @@
+{% extends "basic.html" %}
+{% block title %}
+Formulár
+{% endblock %}
+{% block body %}
+<form method="post">
+<label for="meno">Meno:</label>
+  <input type="text" name="meno">
+<label for="priezvisko">Priezvisko:</label>
+  <input type="text" name="priezvisko">
+<input type="submit" value="Odoslať">
+</form>
+{% endblock %}
